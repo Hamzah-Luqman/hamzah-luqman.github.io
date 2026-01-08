@@ -66,74 +66,51 @@
                "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
- /* ===== LEFT PROFILE ===== */
-    .profile {
-      margin-top: 40px;
-    }
+.profile-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
 
-    .profile img {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 18px;
-    }
+.instructor-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
 
-    .profile h2 {
-      font-size: 26px;
-      font-weight: 700;
-      margin-bottom: 12px;
-    }
+.instructor-title {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 15px;
+}
 
-    .profile p {
-      margin-bottom: 10px;
-      font-size: 17px;
-    }
+.instructor-bio {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  color: #333;
+}
 
-    .profile-links p {
-      margin: 6px 0;
-      font-size: 17px;
-    }
+.instructor-links p {
+  margin: 6px 0;
+}
 
-    .profile-links i {
-      width: 18px;
-      margin-right: 6px;
-      color: #000;
-    }
+.instructor-links i {
+  width: 18px;
+  color: #000;
+}
 
-    .profile-links a {
-      color: #0000EE;
-      text-decoration: none;
-    }
+.instructor-links a {
+  color: #0645AD;
+  text-decoration: none;
+}
 
-    .profile-links a:hover {
-      text-decoration: underline;
-    }
+.instructor-links a:hover {
+  text-decoration: underline;
+}
 
-    /* ===== RIGHT CONTENT ===== */
-    .teaching {
-      margin-top: 40px;
-    }
-
-    .teaching h3 {
-      font-size: 20px;
-      font-weight: 700;
-      margin-top: 28px;
-      margin-bottom: 10px;
-    }
-
-    .teaching p {
-      margin-left: 25px;
-      margin-bottom: 6px;
-      font-size: 17px;
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      .profile {
-        text-align: center;
-      }
-    }
   </style>
 </head>
 
@@ -169,46 +146,49 @@
 <p><br><br><br></p>
 
 <!-- ================= CONTENT ================= -->
+<section id="courses">
+  <div class="container">
+    <div class="row">
 
-    <!-- LEFT COLUMN -->
-    <div class="col-md-4">
-      <div class="profile">
+      <!-- LEFT COLUMN: INSTRUCTOR INFO -->
+      <aside class="col-md-4 col-lg-3">
+        <img src="images/hamzah-luqman.jpeg"
+         alt="Hamzah Luqman"
+         class="profile-photo">
 
-        <img src="images/hamzah.jpg" alt="Hamzah Luqman">
+        <h3><strong>Hamzah Luqman</strong></h3>
+        <p>Assistant Professor</p>
+        <p>Computer Science</p>
+        <p>KFUPM</p>
 
-        <h2>Hamzah Luqman</h2>
+        <hr>
 
         <p>
-          I am currently an Assistant Professor at KFUPM.
-          My research interests include Natural Language Processing,
-          Deep Learning, and Large Language Models.
+          <i class="fa fa-envelope"></i>
+          hamzah.luqman@kfupm.edu.sa
         </p>
 
-        <div class="profile-links">
-          <p>
-            <i class="fa fa-graduation-cap"></i>
-            <a href="#" target="_blank">G. Scholar</a>
-          </p>
+        <p>
+          <i class="fa fa-globe"></i>
+          <a href="https://hamzahlq.github.io" target="_blank">
+            Personal Website
+          </a>
+        </p>
 
-          <p>
-            <i class="fa fa-linkedin-square"></i>
-            <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_ID" target="_blank">
-              LinkedIn
-            </a>
-          </p>
+        <p>
+          <i class="fa fa-google"></i>
+          <a href="#" target="_blank">Google Scholar</a>
+        </p>
 
-          <p>
-            <i class="fa fa-envelope"></i>
-            <a href="mailto:hamzah.luqman@kfupm.edu.sa">E-Mail</a>
-          </p>
-        </div>
+        <p>
+          <i class="fa fa-github"></i>
+          <a href="#" target="_blank">GitHub</a>
+        </p>
+      </aside>
 
-      </div>
-    </div>
-
-    <!-- RIGHT COLUMN -->
-    <div class="col-md-8">
-      <div class="teaching">
+      <!-- RIGHT COLUMN: COURSES -->
+      <main class="col-md-8 col-lg-9">
+        <div class="courses_section">
 
           <h2 class="h2_courses">Fall 2025</h2>
           <ul class="ul_courses">
@@ -244,10 +224,58 @@
             <li class="li_courses">SWE-411: Software Engineering Project I</li>
           </ul>
 
+<h2 class="semester h2_courses">Fall 2022 </h2>
+
+<ul class="ul_courses"><li class="li_courses">ICS-471: Deep Learning</li></ul>
+<ul class="ul_courses"><li class="li_courses">ICS-590: Special Topics in Deep Learning</li></ul>
+
+<h2 class="semester h2_courses">Spring 2022 </h2>
+
+<ul class="ul_courses"><li class="li_courses">ICS-504: Deep Learning</li></ul>
+<ul class="ul_courses"><li class="li_courses">ICS-547: Digital Image Processing</li></ul>
+
+
+<h2 class="semester h2_courses">Fall 2021 </h2>
+
+<ul class="ul_courses"><li class="li_courses">ICS-471: Deep Learning</li></ul>
+<ul class="ul_courses"><li class="li_courses">ICS-582: Natural Language Processing</li></ul>
+
+<h2 class="semester h2_courses">Spring 2021 </h2>
+
+<ul class="ul_courses"><li class="li_courses">ICS-504: Deep Learning</li></ul>
+<ul class="ul_courses"><li class="li_courses">ICS-619: Project</li></ul>
+
+<h2 class="semester h2_courses">Fall 2020 </h2>
+
+<ul class="ul_courses"><li class="li_courses">ICS-502: Machine Learning</li></ul>
+<ul class="ul_courses"><li class="li_courses">SWE-363: Web Engineering & Development</li></ul>
+
+<h2 class="semester h2_courses">Spring 2020 </h2>
+
+<ul class="ul_courses"><li class="li_courses">ICS-483\505: Computer Vision</li></ul>
+<ul class="ul_courses"><li class="li_courses">ICS-701: Directed Research I</li></ul>
+<ul class="ul_courses"><li class="li_courses">SWE-363: Web Engineering & Development</li></ul>
+
+
+<h2 class="semester h2_courses">Fall 2019 </h2>
+
+<ul class="ul_courses"><li class="li_courses">ICS-102: Introduction to Computing I</li></ul>
+<ul class="ul_courses"><li class="li_courses">ICS-483: Computer Vision</li></ul>
+<ul class="ul_courses"><li class="li_courses">SWE-363: Web Engineering & Development</li></ul>
+
+<h2 class="semester h2_courses">Spring 2019 </h2>
+
+<ul class="ul_courses"><li class="li_courses">ICS-102: Introduction to Computing I</li></ul>
+<ul class="ul_courses"><li class="li_courses">SWE-363: Web Engineering & Development</li></ul>
+
+
+
+        </div>
+      </main>
 
     </div>
   </div>
-
+</section>
 
 <hr>
 
